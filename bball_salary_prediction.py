@@ -5,11 +5,11 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
-model = pickle.load(open("C:\\Users\\Simeon\\Desktop\\nba_model",'rb'))
+model = pickle.load(open("nba_model",'rb'))
 
 st.title('Basketball salary predictor')
 st.sidebar.header('Player Data')
-player_image = Image.open("C:\\Users\\Simeon\\Downloads\\pexels-rdne-stock-project-7005234.jpg")
+player_image = Image.open("pexels-rdne-stock-project-7005234.jpg")
 st.image(player_image,width=550)
 
 #creating a function for the values
